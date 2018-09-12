@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-V6-QvA">
+                                <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rqF-DB-wN7">
+                                        <rect key="frame" x="35.5" y="27" width="304" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-CN-jIi">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="ibDrawRectangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lk-b8-OGl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKY-9S-v1G">
+                                                <rect key="frame" x="86" y="0.0" width="46" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06G-HB-QPM">
+                                                <rect key="frame" x="172" y="0.0" width="46" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-l7-uHv">
+                                                <rect key="frame" x="258" y="0.0" width="46" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MLa-CN-jIi" firstAttribute="leading" secondItem="rqF-DB-wN7" secondAttribute="leading" id="1yK-WL-imN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ssJ-l7-uHv" secondAttribute="trailing" id="HMP-SQ-WcV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rqF-DB-wN7" firstAttribute="centerX" secondItem="hhe-V6-QvA" secondAttribute="centerX" id="CYg-S4-IIN"/>
+                                    <constraint firstItem="rqF-DB-wN7" firstAttribute="centerY" secondItem="hhe-V6-QvA" secondAttribute="centerY" id="FT2-Fh-oOW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5U-27-TnZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="563"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-uD-avd">
+                                        <rect key="frame" x="134" y="89" width="107" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t5U-27-TnZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0UB-Wi-bsA"/>
+                            <constraint firstItem="t5U-27-TnZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9jY-6U-ieo"/>
+                            <constraint firstItem="hhe-V6-QvA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FIX-Pr-BTc"/>
+                            <constraint firstItem="hhe-V6-QvA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ift-SO-nHj"/>
+                            <constraint firstItem="hhe-V6-QvA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yzb-ue-Uhu"/>
+                            <constraint firstItem="hhe-V6-QvA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:8" id="f1t-w2-qTa"/>
+                            <constraint firstItem="t5U-27-TnZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h6T-Qk-FvW"/>
+                            <constraint firstItem="hhe-V6-QvA" firstAttribute="top" secondItem="t5U-27-TnZ" secondAttribute="bottom" id="rxX-Vc-bc0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ibCircleButton" destination="jKY-9S-v1G" id="VXO-L2-gOs"/>
+                        <outlet property="ibDrawView" destination="t5U-27-TnZ" id="c4S-JX-rGJ"/>
+                        <outlet property="ibFirstString" destination="Tzk-uD-avd" id="uGn-0K-W2G"/>
+                        <outlet property="ibLineButton" destination="06G-HB-QPM" id="YeD-R3-HyP"/>
+                        <outlet property="ibRectangleButton" destination="MLa-CN-jIi" id="Uf9-mc-xIH"/>
+                        <outlet property="ibTextButton" destination="ssJ-l7-uHv" id="lnb-do-1nw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

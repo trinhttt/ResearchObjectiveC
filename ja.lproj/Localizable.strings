@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Draw_ObjectiveC
+
+  Created by Thai Thi Tu Trinh on 9/12/18.
+  Copyright © 2018 Thai Thi Tu Trinh. All rights reserved.
+*/
+"Welcome" = "ようこそ";
+"Mess" = "これはアラートです";
+"Ok" = "オーケー";
